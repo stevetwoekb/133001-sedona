@@ -1,12 +1,121 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Главная</title>
+</head>
+<body>
+<div class="warpper">
+	<header class="main-header">
+		<nav class="main-nav">
+			<ul>
+				<li><a href="#">ИНФОРМАЦИЯ</a></li>
+				<li><a href="#">ФОТО И ВИДЕО</a></li>
+				<li><a href="#">КАРТА ШТАТА</a></li>
+				<li><a href="#">ГОСТИНИЦЫ</a></li>
+			</ul>
+			<div class="logo"><img src="http://placehold.it/150x100" alt=""></div>
+		</nav>
+	</header>
+	<main class="content">
+		<section class="main-pic">
+			<div class="main-pic-bg">
+			<div><img src="http://placehold.it/150x100" alt="главная картинка"></div>
+			<div><img src="http://placehold.it/150x100" alt="главная картинка"></div>
+			<div><img src="http://placehold.it/150x100" alt="главная картинка"></div>
+			</div>
+		</section>
+		<section class="main-distruction">
+			<h1>СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h1>
+			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+		</section>
+		<section class="service">
+			<article class="service-item blue">
+				<b>НАСТОЯЩИЙ ГОРОДОК</b>
+				<span>— №1 —</span>
+				<p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+			</article>
+			<article class="service-item double">	
+				<img src="http://placehold.it/150x100" alt="Длинная картинка">
+			</article>
+			<article class="service-item white">
+				<img src="http://placehold.it/150x100" alt="Жилье">
+				<b>Жилье</b>
+				<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+			</article>
+			<article class="service-item white">
+				<img src="http://placehold.it/150x100" alt="Еда">
+				<b>Еда</b>
+				<p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,
+					Вы НЕ разочаруетесь!</p>
+			</article>
+			<article class="service-item white">
+				<img src="http://placehold.it/150x100" alt="Сувениры">
+				<b>Сувениры</b>
+				<p>Не только китайского, но и местного производства!</p>
+			</article>
+			<article class="service-item double">	
+				<img src="http://placehold.it/150x100" alt="Длинная картинка">
+			</article>
+			<article class="service-item blue">
+				<b>ТАМ ЕСТЬ Мост дьявола</b>
+				<span>— №2 —</span>
+				<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+			</article>
+			<article class="service-item gray">
+				<b>ТНЕБОЛЬШАЯ ПЛОЩАДЬ</b>
+				<span>— №3 —</span>
+				<p>ВСЕ достопримечательности находятся очень близко</p>
+			</article>
+			<article class="service-item gray">
+				<b>КРАСИВАЯ ДОРОГА</b>
+				<span>— №4 —</span>
+				<p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+			</article>
+			<article class="service-item gray">
+				<b>МАЛО ТУРИСТОВ</b>
+				<span>— №5 —</span>
+				<p>Большинство едет в гранд каньон и толпится там</p>
+			</article>
+		</section>
+		<section class="registration">
+			<b>ЗАИНТЕРЕСОВАЛИСЬ?</b>
+			<p>
+				Укажите предполагаемые даты поездки, 
+				и мы покажем вам лучшие предложения гостиниц в седоне
+			</p>
+			<button>ПОИСК ГОСТИНИЦЫ В седоне</button>
+			<!--  здесь при нажатии появится  форма которая описана в конце документа !-->
+		</section>
+		<section class="map">
+			<img src="http://placehold.it/150x100" alt="Карта">
+			<!-- здесь будет интерактивная карта!-->
+		</section>
+		
+	</main>
+	<footer class="main-footer">
+			<b>#VISITSEDONA</b>
+			<ul>
+				<li><a href=""><img src="http://placehold.it/150x100" alt=""></a></li>
+				<li><a href=""><img src="http://placehold.it/150x100" alt=""></a></li>
+				<li><a href=""><img src="http://placehold.it/150x100" alt=""></a></li>
+			</ul>
+			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt=""></a>
+		</footer>
+		<!--Форма !-->
+		<div class="form-serch">
+			<form action="get">
+				<label for="arrival-date">Дата заезда</label>
+				<input type="date" id="arrival-date" value="2017-04-24">
+				<label for="departure-date">дата отъезда</label>
+				<input type="date" id="departure-date" value="2017-07-04">
+				<label for="adults">Взрослые</label>
+				<input type="number" id="adults" value="2">
+				<label for="childreren">Дети</label>
+				<input type="number" id="childreren" value="0">
+				<button>Найти</button>
+			</form>
+		</div>
+</div>
+</body>
 </html>
