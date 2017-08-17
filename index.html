@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Главная</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="wrapper">
@@ -17,7 +18,7 @@
 				<li><a href="#">Гостиницы</a></li>
 			</ul>
 
-			<div class="logo"><img src="http://placehold.it/150x100" alt=""></div>
+			<div class="logo"><img src="img/logo.png" alt="Седона"></div>
 
 		</nav>
 	</header>
@@ -26,9 +27,9 @@
 
 		<section class="main-pic">
 			<div class="main-pic-bg">
-			<div><img src="http://placehold.it/150x100" alt="главная картинка"></div>
-			<div><img src="http://placehold.it/150x100" alt="главная картинка"></div>
-			<div><img src="http://placehold.it/150x100" alt="главная картинка"></div>
+			<div><img src="img/welcome.png" alt="главная картинка"></div>
+			<div><img src="img/header_text_2.png" alt="главная картинка"></div>
+			<div><img src="img/header_text_3.png" alt="главная картинка"></div>
 			</div>
 		</section>
 
@@ -47,7 +48,7 @@
 					<span>— №1 —</span>
 					<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
 				</div>
-				<div class="view-big-block"><img src="http://placehold.it/150x100" alt="Город"></div>
+				<div class="view-big-block"><img src="img/true_city.jpg" alt="Город"></div>
 			</div>
 
 			<ul class="тhree-blocks leisure">
@@ -74,12 +75,20 @@
 				
 				</li>
 			</ul>
+			<div class="view-city">
+				<div class="view-big-block"><img src="img/bridge_devil.jpg" alt="Город"></div>
+				<div class="view-small-block">
+					<b>Там есть мост дьявоал</b>
+					<span>— №2 —</span>
+					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				</div>
 			
+			</div>
 				<ul class="тhree-blocks features">
 				<li>
 
 				<img src="http://placehold.it/150x100" alt="Дом">
-					<b>Настоящий городок</b>
+					<b>Небольшая площадь</b>
 					<span>— №3 —</span>
 					<span>все достопримечательности находятся очень близко</span>
 				</li>
@@ -116,13 +125,17 @@
 			<div class="form-serch">
 			<form action="get">
 				<label for="arrival-date">Дата заезда</label>
-				<input type="date" id="arrival-date" value="2017-04-24">
+				<input type="text" id="arrival-date" placeholder="24 Апреля 2017">
 				<label for="departure-date">дата отъезда</label>
-				<input type="date" id="departure-date" value="2017-07-04">
+				<input type="text" id="departure-date" placeholder="4 Июля 2017">
 				<label for="adults">Взрослые</label>
+				<button>-</button>
 				<input type="number" id="adults" value="2">
+				<button>+</button>
+				<button>-</button>
 				<label for="childrn">Дети</label>
 				<input type="number" id="childrn" value="0">
+				<button>+</button>
 				<button>Найти</button>
 			</form>
 			</div>
@@ -130,7 +143,7 @@
 		</section>
 
 		<section class="map">
-			<img src="http://placehold.it/150x100" alt="Карта">
+			<img src="img/map.jpg" alt="Карта">
 			<!-- здесь будет интерактивная карта!-->
 		</section>
 	</main>
