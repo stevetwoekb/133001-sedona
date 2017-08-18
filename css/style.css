@@ -1,0 +1,117 @@
+/*  Шрифты*/
+
+@font-face {
+  font-family: 'PT Sans';
+  src:url(../fonts/ptsans.woff);
+  src:url(../fonts/ptsans.woff2);
+}
+
+@font-face {
+  font-family: 'PT Sans bold';
+  src:url(../fonts/ptsansbold.woff);
+  src:url(../fonts/ptsansbold.woff2);
+}
+/*  Шрифты*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden { 
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}
+
+body { 
+  font-family: 'PT Sans bold', Arial, Sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 14px;
+  min-width: 100%;
+  background: #f2f2f2;
+}
+
+a {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+b {
+  font-size: 21px; 
+}
+
+p, 
+span {
+  font-size: 14px;
+  font-weight: 400; }
+
+li { 
+  list-style: none; 
+}
+
+.main-header {
+position: relative;
+}
+
+nav ul {
+  display: flex;
+  min-height: 56px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li { 
+  width: 20%;
+  text-align: center;
+}
+
+nav ul li:nth-child(2){ 
+margin-right: 20%;
+}
+
+.logo { 
+  position: absolute;
+  width: 100%;
+ }
+
+.logo img {
+  display: block; 
+  margin: 0 auto; 
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.main-pic-bg {
+  width: 100%;
+  height: 580px;
+}
+
+.main-title {
+  font-family: 'PT Sans bold', Arial, Sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000; 
+}
+
+.main-pic-bg { 
+  width: 100%;
+  background: url(../img/bg_photo.jpg) no-repeat;
+  background-size: cover; 
+}
+
+.bg-form { 
+  background: url(../img/hotels_header.jpg) no-repeat; 
+}

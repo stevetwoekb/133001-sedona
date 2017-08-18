@@ -3,12 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Главная</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 </head>
 <body>
 <div class="wrapper">
 
 	<header class="main-header">
-
+		<div class="logo"><img src="img/logo.png" alt="Седона" align="center"></div>
 		<nav class="main-nav">
 			<ul>
 				<li><a href="#">Информация</a></li>
@@ -17,7 +19,7 @@
 				<li><a href="#">Гостиницы</a></li>
 			</ul>
 
-			<div class="logo"><img src="http://placehold.it/150x100" alt=""></div>
+			
 
 		</nav>
 	</header>
@@ -25,42 +27,43 @@
 	<main class="content">
 
 		<section class="main-pic">
+			<h2 class="visually-hidden">Прекрасный вид на горы</h2>
 			<div class="main-pic-bg">
-			<div><img src="http://placehold.it/150x100" alt="главная картинка"></div>
-			<div><img src="http://placehold.it/150x100" alt="главная картинка"></div>
-			<div><img src="http://placehold.it/150x100" alt="главная картинка"></div>
+			<div><img src="img/welcome.png" alt="главная картинка"></div>
+			<div><img src="img/header_text_2.png" alt="главная картинка"></div>
+			<div><img src="img/header_text_3.png" alt="главная картинка"></div>
 			</div>
 		</section>
 
 		<section class="main-discription">
 
-			<h1>Седона — небольшой городок в Аризоне, Заслуживающий большего!</h1>
+			<h1 class="main-title">Седона — небольшой городок в Аризоне, Заслуживающий большего!</h1>
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
 		</section>
 
 		<section class="service">
-
+				<h2 class="visually-hidden">Преймущества Седоны</h2>
 			<div class="view-city">
 				<div class="view-small-block">
 					<b>Настоящий городок</b>
 					<span>— №1 —</span>
 					<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
 				</div>
-				<div class="view-big-block"><img src="http://placehold.it/150x100" alt="Город"></div>
+				<div class="view-big-block"><img src="img/true_city.jpg" alt="Город"></div>
 			</div>
 
 			<ul class="тhree-blocks leisure">
 				<li>
 
-				<img src="http://placehold.it/150x100" alt="Дом">
+				<img src="img/svg/icon.svg" alt="Дом">
 				<b>Жилье</b>
 				<span>Рекомендуем пожить в настоящем мотеле, все как в кино!</span>
 				</li>
 
 				<li>
 
-				<img src="http://placehold.it/150x100" alt="Бургер">
+				<img src="img/svg/icon-3.svg" alt="Бургер">
 				<b>Еда</b>
 				<span>Всегда заказывайте Фирменный Бургер, Вы не разочаруетесь!</span>
 
@@ -68,18 +71,26 @@
 
 				<li>
 
-				<img src="http://placehold.it/150x100" alt="Сувениры">
+				<img src="img/svg/icon-2.svg" alt="Сувениры">
 				<b>Сувениры</b>
 				<span>Не только китайского, но и местного производства!</span>
 				
 				</li>
 			</ul>
+			<div class="view-city">
+				<div class="view-big-block"><img src="img/bridge_devil.jpg" alt="Город"></div>
+				<div class="view-small-block">
+					<b>Там есть мост дьявоал</b>
+					<span>— №2 —</span>
+					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				</div>
 			
+			</div>
 				<ul class="тhree-blocks features">
 				<li>
 
 				<img src="http://placehold.it/150x100" alt="Дом">
-					<b>Настоящий городок</b>
+					<b>Небольшая площадь</b>
 					<span>— №3 —</span>
 					<span>все достопримечательности находятся очень близко</span>
 				</li>
@@ -105,6 +116,7 @@
 		</section>
 
 		<section class="registration">
+			<h2 class="visually-hidden">Регистрация даты поездки</h2>
 			<b>Заинтересовались?</b>
 			<p>
 				Укажите предполагаемые даты поездки, 
@@ -116,13 +128,17 @@
 			<div class="form-serch">
 			<form action="get">
 				<label for="arrival-date">Дата заезда</label>
-				<input type="date" id="arrival-date" value="2017-04-24">
+				<input type="text" id="arrival-date" placeholder="24 Апреля 2017">
 				<label for="departure-date">дата отъезда</label>
-				<input type="date" id="departure-date" value="2017-07-04">
+				<input type="text" id="departure-date" placeholder="4 Июля 2017">
 				<label for="adults">Взрослые</label>
+				<button>-</button>
 				<input type="number" id="adults" value="2">
+				<button>+</button>
+				<button>-</button>
 				<label for="childrn">Дети</label>
 				<input type="number" id="childrn" value="0">
+				<button>+</button>
 				<button>Найти</button>
 			</form>
 			</div>
@@ -130,7 +146,8 @@
 		</section>
 
 		<section class="map">
-			<img src="http://placehold.it/150x100" alt="Карта">
+			<h2 class=".visually-hidden">Карта седоны</h2>
+			<img src="img/map.jpg" alt="Город Седона находится в штате Аризона">
 			<!-- здесь будет интерактивная карта!-->
 		</section>
 	</main>
