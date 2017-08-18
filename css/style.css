@@ -1,32 +1,86 @@
 /*  Шрифты*/
 @font-face {
-	font-family: 'PT Sans';
-	src:url(../fonts/ptsansnarrow.woff);
-	src:url(../fonts/ptsansnarrow.woff2);
+font-family: 'PT Sans';
+src:url(../fonts/ptsansnarrow.woff);
+src:url(../fonts/ptsansnarrow.woff2);
+}
+@font-face {
+font-family: 'PT Sans bold';
+src:url(../fonts/ptsansnarrowbold.woff);
+src:url(../fonts/ptsansnarrowbold.woff2);
 }
 /*  Шрифты*/
 
+* {
+	margin: 0;
+	padding: 0;
+}
+.visually-hidden { 
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}
+
 body { 
-font-family: 'PT Sans', Arial, Sans-serif;
+font-family: 'PT Sans bold', Arial, Sans-serif;
 font-weight: 700;
+line-height: 24px;
+color: #333333;
 text-transform: uppercase;
 font-size: 14px;
 min-width: 100%;
 background: #f2f2f2;
 }
-a 
-{color: #000;}
+a {
+font-size: 14px;
+color: #000;
+text-decoration: none;}
 
-h1 { 
-font-size: 21px;
- }
 b {
-	font-size: 21px;
-}
+font-size: 21px; }
 p, span {
-	font-size: 14px;
-	font-weight: 400;
+font-size: 14px;
+font-weight: 400; }
+
+li { list-style: none; }
+
+.main-header {
+position: relative;
 }
+
+
+nav ul {
+display: flex;
+min-height: 56px;
+justify-content: space-between;
+}
+
+nav ul li{ 
+padding-top: 20px; }
+nav ul li:first-child { 
+margin-left: 72px; }
+nav ul li:last-child { 
+margin-right: 72px; }
+.logo { 
+position: absolute;
+width: 100%;
+ }
+ .logo img {
+ display: block; 
+ margin: 0 auto; }
+.wrapper {
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+background: #fff;
+}
+.main-title { 
+font-size: 21px;
+line-height: 26px;
+color: #000000; }
+
 
 .main-pic-bg { 
 background: url(../img/bg_photo.jpg) no-repeat; }
