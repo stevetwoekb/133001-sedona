@@ -14,6 +14,7 @@
 /*  Шрифты*/
 
 * {
+    box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -27,7 +28,7 @@
 }
 
 body { 
-  font-family: 'PT Sans bold', Arial, Sans-serif;
+  font-family: 'PT Sans', Arial, Sans-serif;
   font-weight: 400;
   line-height: 24px;
   color: #333333;
@@ -35,95 +36,218 @@ body {
   font-size: 14px;
   min-width: 100%;
   background: #f2f2f2;
+  width: 100%;
 }
+h1, p {
+  margin: 0;
+  padding: 0; }
 
 a {
-  font-size: 14px;
-  color: #000;
   text-decoration: none;
 }
 
-b {
-  font-size: 21px; 
-}
-
-p, 
-span {
-  font-size: 14px;
-  font-weight: 400;
-}
-
-li { 
-  list-style: none; 
-}
-
-.main-header {
-  position: relative;
-}
-
-nav ul {
-  display: flex;
-  min-height: 56px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul li { 
-  width: 20%;
-  text-align: center;
-}
-
-nav ul li:nth-child(2){ 
-  margin-right: 20%;
-}
-
-.logo { 
-  position: absolute;
-  width: 100%;
- }
-
-.logo img {
-  display: block; 
-  margin: 0 auto; 
+li {
+  list-style: none;
 }
 
 .wrapper {
+  margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
   background: #fff;
+}
+
+.menu-item a {
+  font-family: "PT sans bold";
+  line-height: 26px;
+  color: #000;
+
+}
+
+.menu-item a:hover,
+.menu-item a:focus {
+  color: #81b3d2;
+  outline: none;
+}
+
+.menu-item a:active {
+  color: #cacaca;
 }
 
 .main-pic-bg {
   width: 100%;
-  height: 580px;
+  background: url(../img/bg_photo.jpg)
+  no-repeat 
+  center;
+}
+.main-bg-small{
+  width: 456px;
+  margin: 0 auto;
 }
 
-.main-title {
-  font-family: 'PT Sans bold', Arial, Sans-serif;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  color: #000000; 
-}
-
-.main-discription {
+.main-discription{
   text-align: center;
 }
 
-.main-discription p { 
-  font-family: 'PT Sans', Arial, Sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #333333;
+.main-title {
+  font-size: 21px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.main-title + p { 
+ line-height: 26px;
  }
 
-.main-pic-bg { 
-  width: 100%;
-  background: url(../img/bg_photo.jpg) no-repeat;
-  background-size: cover; 
+.view-city {
+  display: flex;
+  max-height: 256px;
+}
+.view-small-block {
+
+  padding-top: 48px;
+  padding-left: 60px;
+  padding-right: 30px;
+  width: 33.33%;
+  max-height: 256px;
+  background: #81b3d2;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+.view-big-block {
+  width: 66,67%;
 }
 
-.bg-form { 
-  background: url(../img/hotels_header.jpg) no-repeat; 
+.тhree-blocks {
+  display: flex;
 }
+
+.block-item {
+  width: 33.33%;
+  text-align: center;
+    padding: 50px 61px;
+}
+.p-bold {
+  font-family: "PT sans bold";
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.features {
+  background: #eeeeee;
+}
+.registration {
+  padding-top: 54px;
+  padding-bottom: 0px;
+  padding-left: 312px;
+  padding-right: 312px;
+  text-align: center;
+}
+.second-title {
+  font-family: "PT sans bold", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+
+}
+
+.btn { 
+ background: transparent;
+ border: none;
+ text-transform: uppercase;
+  color: white;
+  font-family: "PT sans bold", Arial, sans-serif;
+  font-size: 21px
+ }
+
+ .brown {
+  padding: 34px 140px;
+  background: #766357;
+  width: 567px;
+ }
+
+.form-serch {
+   width: 567px;
+}
+
+.main-form {
+  background: #fff;
+  color: #000;
+  font-family: "PT sans bold", Arial, sans-serif;
+
+ }
+.form-item {
+  text-align: left;
+  margin: 15px;
+}
+.form-item input { 
+  color: black;
+  font-family: "PT sans bold", Arial, sans-serif;
+  background: #f2f2f2;
+  border: none;  
+  text-transform: uppercase;
+  padding: 10px 15px;
+  }
+
+  .form-item input-placeholder {
+    color: #000;
+  }
+
+
+
+.small-btn-form {
+    color: #a9a9a9;
+  font-family: "PT sans bold", Arial, sans-serif;
+  background: #f2f2f2;
+  border: none;  
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+
+.blue-btn-form {
+  background: #81b3d2;
+  color: white;
+   font-family: "PT sans bold", Arial, sans-serif;
+  border: none;  
+  text-transform: uppercase;
+}
+
+
+
+.main-footer {
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+
+.center-footer li {
+  display: inline-block;
+  background: #81b3d2;
+}
+
+.bg-form {
+  background: url(../img/hotels_header.jpg) no-repeat center;
+}
+
+.form-hotel {
+  color: white;
+  font-size: 14px;
+}
+
+.header-from {
+  border: none;
+}
+
+.header-from legend { 
+  font-family: "PT sans bold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+ }
+
+ .header-from label { 
+  font-family: "PT sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+ }

@@ -8,21 +8,22 @@
 <body>
 <div class="wrapper">
 
-	<header class="main-header">
+<header class="main-header">
+		<a href="#" class="logo"><img src="img/logo.png" alt="Логотип"></a>
 		<nav class="main-nav">
-			<ul>
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Фото и видео</a></li>
-				<li><a href="#">Карта штата</a></li>
-				<li><a href="#">Гостиницы</a></li>
+			<ul class="main-menu">
+				<li class="menu-item"><a href="#">Информация</a></li>
+				<li class="menu-item"><a href="#">Фото и видео</a></li>
+				<li class="menu-item"><a href="#">Карта штата</a></li>
+				<li class="menu-item"><a href="#">Гостиницы</a></li>
 			</ul>
-			<div class="logo"><img src="img/logo.png" alt="Лого"></div>
 		</nav>
 	</header>
+
 	<main>
 		<div class="bg-form">
-			<form action="action">
-			<fieldset class="header-from first">
+			<form action="action" class="form-hotel">
+			<fieldset class="header-from">
 				<legend>Инфраструктура:</legend>
 				<input type="checkbox">
 				<label>Бассейн</label>
@@ -43,8 +44,8 @@
 				<fieldset class="header-from slider">
 				<legend>Стоимость в сутки (Р):</legend>
 				<input type="range">
-				<p>От 0</p>
-				<p>До 3000</p>
+				<input type="text" value="0">
+				<input type="text" value="3000">
 				<button>Показать</button>
 			</fieldset>
 			</form>
@@ -70,7 +71,7 @@
 
 						<div class="serch-img"><img src="img/list-1.jpg" alt=""></div>
 						<div class="serch-discription">
-							<b>Amara Resort & Spa</b>
+							<a href="#">Amara Resort & Spa</a>
 							<span>Гостиница</span><span>от 4000 р.</span>
 							<a href="#">Подробнее</a>
 							<a href="#">Забронировать</a>
@@ -92,7 +93,7 @@
 
 						<div class="serch-img"><img src="img/list-2.jpg"  alt=""></div>
 						<div class="serch-discription">
-							<b>Desert Quail Inn</b>
+							<a href="#">Desert Quail Inn</a>
 							<span>Мотель</span><span>от 3000 р.</span>
 							<a href="#">Подробнее</a>
 							<a href="#">Забронировать</a>
@@ -113,7 +114,7 @@
 
 						<div class="serch-img"><img src="img/list-3.jpg" alt=""></div>
 						<div class="serch-discription">
-							<b>Villas at Poco Diablo</b>
+							<a href="#">Villas at Poco Diablo</a>
 							<span>Апартаменты</span><span>от 2000 р.</span>
 							<a href="#">Подробнее</a>
 							<a href="#">Забронировать</a>
