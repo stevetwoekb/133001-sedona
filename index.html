@@ -3,24 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Главная</title>
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 <div class="wrapper">
 
 	<header class="main-header">
-		<div class="logo"><img src="img/logo.png" alt="Седона" align="center"></div>
+		<a href="#" class="logo"><img src="img/logo.png" alt="Логотип"></a>
 		<nav class="main-nav">
-			<ul>
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Фото и видео</a></li>
-				<li><a href="#">Карта штата</a></li>
-				<li><a href="#">Гостиницы</a></li>
+			<ul class="main-menu">
+				<li class="menu-item"><a href="#">Информация</a></li>
+				<li class="menu-item"><a href="#">Фото и видео</a></li>
+				<li class="menu-item"><a href="#">Карта штата</a></li>
+				<li class="menu-item"><a href="#">Гостиницы</a></li>
 			</ul>
-
-			
-
 		</nav>
 	</header>
 
@@ -29,15 +27,13 @@
 		<section class="main-pic">
 			<h2 class="visually-hidden">Прекрасный вид на горы</h2>
 			<div class="main-pic-bg">
-			<div><img src="img/welcome.png" alt="главная картинка"></div>
-			<div><img src="img/header_text_2.png" alt="главная картинка"></div>
-			<div><img src="img/header_text_3.png" alt="главная картинка"></div>
+			  <div class="main-bg-small"><img src="img/main-bg-small.png" alt="Добро пожаловать в Седону, потому что Гранд Каньон отстой"></div>
 			</div>
 		</section>
 
 		<section class="main-discription">
 
-			<h1 class="main-title">Седона — небольшой городок в Аризоне, Заслуживающий большего!</h1>
+			<h1 class="main-title">Седона — небольшой городок в Аризоне,<br> Заслуживающий большего!</h1>
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
 		</section>
@@ -46,69 +42,66 @@
 				<h2 class="visually-hidden">Преймущества Седоны</h2>
 			<div class="view-city">
 				<div class="view-small-block">
-					<b>Настоящий городок</b>
-					<span>— №1 —</span>
+					<p class="p-bold">Настоящий<br> городок</p>
+					<p>— №1 —</p>
 					<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
 				</div>
 				<div class="view-big-block"><img src="img/true_city.jpg" alt="Город"></div>
 			</div>
 
 			<ul class="тhree-blocks leisure">
-				<li>
+				<li class="block-item">
 
-				<img src="img/svg/icon.svg" alt="Дом">
-				<b>Жилье</b>
-				<span>Рекомендуем пожить в настоящем мотеле, все как в кино!</span>
+				<img src="img/svg/icon-1.svg" alt="Дом">
+				<p class="p-bold">Жилье</p>
+				<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 				</li>
 
-				<li>
+				<li class="block-item">
 
 				<img src="img/svg/icon-3.svg" alt="Бургер">
-				<b>Еда</b>
-				<span>Всегда заказывайте Фирменный Бургер, Вы не разочаруетесь!</span>
+				<p class="p-bold">Еда</p>
+				<p>Всегда заказывайте Фирменный Бургер, Вы не разочаруетесь!</p>
 
 				</li>
 
-				<li>
+				<li class="block-item">
 
 				<img src="img/svg/icon-2.svg" alt="Сувениры">
-				<b>Сувениры</b>
-				<span>Не только китайского, но и местного производства!</span>
+				<p class="p-bold">Сувениры</p>
+				<p>Не только китайского, но и местного производства!</p>
 				
 				</li>
 			</ul>
 			<div class="view-city">
 				<div class="view-big-block"><img src="img/bridge_devil.jpg" alt="Город"></div>
 				<div class="view-small-block">
-					<b>Там есть мост дьявоал</b>
-					<span>— №2 —</span>
+					<p class="p-bold">Там есть<br> мост дьявола</p>
+					<p>— №2 —</p>
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 				</div>
 			
 			</div>
 				<ul class="тhree-blocks features">
-				<li>
+				<li class="block-item">
 
-				<img src="http://placehold.it/150x100" alt="Дом">
-					<b>Небольшая площадь</b>
-					<span>— №3 —</span>
+					<p class="p-bold">Небольшая площадь</p>
+					<p>— №3 —</p>
 					<span>все достопримечательности находятся очень близко</span>
 				</li>
 
-				<li>
+				<li class="block-item">
 
-				<img src="http://placehold.it/150x100" alt="Бургер">
-					<b>Красивая дорога</b>
-					<span>— №4 —</span>
-					<span>Ехать в седону из лас-вегаса совсем не скучно!</span>
+					<p class="p-bold">Красивая дорога</p>
+					<p>— №4 —</p>
+					<p>Ехать в седону из лас-вегаса совсем не скучно!</p>
 				</li>
 
-				<li>
+				<li class="block-item">
 
-				<img src="http://placehold.it/150x100" alt="Сувениры">
-					<b>Мало туристов</b>
-					<span>— №5 —</span>
-					<span>Большинство едет в гранд каньон и толпится там</span>
+					<p class="p-bold">Мало туристов</p>
+					<p>— №5 —</p>
+					<p>Большинство едет в гранд каньон и толпится там</p>
 				
 				</li>
 			</ul>
@@ -117,36 +110,51 @@
 
 		<section class="registration">
 			<h2 class="visually-hidden">Регистрация даты поездки</h2>
-			<b>Заинтересовались?</b>
+			<p class="second-title">Заинтересовались?</p>
 			<p>
-				Укажите предполагаемые даты поездки, 
+				Укажите предполагаемые даты поездки,<br>
 				и мы покажем вам лучшие предложения гостиниц в седоне
 			</p>
-			<button>Поиск гостиницы седоне</button>
+			<button class="btn brown">Поиск гостиницы седоне</button>
 				<!--Форма !-->
 
 			<div class="form-serch">
-			<form action="get">
-				<label for="arrival-date">Дата заезда</label>
-				<input type="text" id="arrival-date" placeholder="24 Апреля 2017">
-				<label for="departure-date">дата отъезда</label>
-				<input type="text" id="departure-date" placeholder="4 Июля 2017">
-				<label for="adults">Взрослые</label>
-				<button>-</button>
-				<input type="number" id="adults" value="2">
-				<button>+</button>
-				<button>-</button>
-				<label for="childrn">Дети</label>
-				<input type="number" id="childrn" value="0">
-				<button>+</button>
-				<button>Найти</button>
+			<form action="get" class="main-form">
+				<ul class="form-list">
+					<li class="form-item">
+						<label for="date">Дата заезда:</label>
+						<input type="text" name="date" id="date" placeholder="24 Апреля 2017">
+					</li>
+					<li class="form-item">
+						<label for="date-arival">Дата отъезда:</label>
+						<input type="text" name="date" id="date-arival" placeholder="4 июля 2017">
+					</li>
+					<li class="form-item bottom-item">
+						<label for="adult">Взрослые
+						<input type="text" name="adult" id="adult" value="2">
+				
+						</label>
+						
+						
+					</li>
+					<li class="form-item bottom-item">
+						<label for="child">Дети
+						<input type="text" name="date" id="child" value="2">
+						</label>
+						<a href="#" class="small-btn-form">-</a>
+						<a href="#" class="small-btn-form">+</a>
+					</li>
+					<li class="form-item bottom-item">
+						<button class="blue-btn-form">Найти</button>
+					</li>
+				</ul>
 			</form>
 			</div>
 
 		</section>
 
 		<section class="map">
-			<h2 class=".visually-hidden">Карта седоны</h2>
+			<h2 class="visually-hidden">Карта седоны</h2>
 			<img src="img/map.jpg" alt="Город Седона находится в штате Аризона">
 			<!-- здесь будет интерактивная карта!-->
 		</section>
@@ -155,14 +163,14 @@
 	<footer class="main-footer">
 			<b>#VISITSEDONA</b>
 
-			<ul>
-				<li><a href=""><img src="http://placehold.it/150x100" alt=""></a></li>
-				<li><a href=""><img src="http://placehold.it/150x100" alt=""></a></li>
-				<li><a href=""><img src="http://placehold.it/150x100" alt=""></a></li>
+			<ul class="center-footer">
+				<li><a href=""><img src="img/svg/twitter.svg" alt=""></a></li>
+				<li><a href=""><img src="img/svg/fb-icon.svg" alt=""></a></li>
+				<li><a href=""><img src="img/svg/youtube.svg" alt=""></a></li>
 			</ul>
 
-			<a href="https://htmlacademy.ru/intensive/htmlcss">website by
-			<img src="http://placehold.it/150x100" alt="">
+			<a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss">website by
+			<span class=""><img src="img/svg/logo-htmlacademy.svg" alt="Академия"></span>
 			</a>
 	</footer>
 	
