@@ -49,7 +49,7 @@ a {
 li {
   list-style: none;
 }
-.containe {
+.container {
   margin: 0 auto;
 }
 .wrapper {
@@ -131,7 +131,7 @@ margin-right: 20%;
   margin-bottom: 25px;
 }
 
-.main-title + p { 
+.main-title-sub { 
  line-height: 26px;
  padding-bottom: 50px;
  }
@@ -548,16 +548,15 @@ background: url(../img/border-line.png) no-repeat right;
   margin-right: 30px;
 }
 
+
 .serch-global-sorting a {
   color: #e0e0e0;
-  text-decoration: underline;
-  text-decoration-color: #81b3d2;
-  text-decoration-style: dotted;
+  border-bottom: dotted 1px #81b3d2;
 }
 
 .serch-global-sorting  .active { 
 color: #81b3d2;
-text-decoration: none; }
+border: none;}
 
 .serch-global-sorting li:last-child {
   margin-right: 0px;
