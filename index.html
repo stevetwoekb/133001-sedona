@@ -107,8 +107,9 @@
 			</ul>
 
 		</section>
-
+	
 		<section class="registration">
+			<div class="container reigstration-center">
 			<h2 class="visually-hidden">Регистрация даты поездки</h2>
 			<p class="second-title">Заинтересовались?</p>
 			<p>
@@ -117,40 +118,23 @@
 			</p>
 			<button class="btn brown">Поиск гостиницы седоне</button>
 				<!--Форма !-->
-
-			<div class="form-serch">
-			<form action="get" class="main-form">
-				<ul class="form-list">
-					<li class="form-item">
-						<label for="date">Дата заезда:</label>
-						<input type="text" name="date" id="date" placeholder="24 Апреля 2017">
-					</li>
-					<li class="form-item">
-						<label for="date-arival">Дата отъезда:</label>
-						<input type="text" name="date" id="date-arival" placeholder="4 июля 2017">
-					</li>
-					<li class="form-item bottom-item">
-						<label for="adult">Взрослые
-						<input type="text" name="adult" id="adult" value="2">
-				
-						</label>
-						
-						
-					</li>
-					<li class="form-item bottom-item">
-						<label for="child">Дети
-						<input type="text" name="date" id="child" value="2">
-						</label>
-						<a href="#" class="small-btn-form">-</a>
-						<a href="#" class="small-btn-form">+</a>
-					</li>
-					<li class="form-item bottom-item">
-						<button class="blue-btn-form">Найти</button>
-					</li>
-				</ul>
-			</form>
+				<div class="show-form">
+					<form action="get" class="main-form">
+						<div class="top-form-item">
+							<label for="">Дата заезда:</label> <input type="text">
+						</div>
+						<div class="top-form-item">
+							<label for="">Дата отъезда:</label> <input type="text">
+						</div>
+						<div class="bottom-form">
+						<div class="bottom-form-item"><label for="">Взрослые:</label><button class="gray-btn">-</button> <input type="text" value="2"> <button class="gray-btn">+</button>
+						</div>
+						<div class="bottom-form-item"><label for="">Дети:</label><button class="gray-btn">-</button> <input type="text" value="0"> <button class="gray-btn">+</button>
+						</div>
+						</div>	
+					</form>
+				</div>
 			</div>
-
 		</section>
 
 		<section class="map">

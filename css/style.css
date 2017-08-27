@@ -49,13 +49,43 @@ a {
 li {
   list-style: none;
 }
-
+.containe {
+  margin: 0 auto;
+}
 .wrapper {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
   background: #fff;
 }
+
+.main-header {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 531px;
+  width: 138px;
+}
+
+.main-menu {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 56px;
+}
+
+.menu-item {
+  text-align: center;
+  width: 20%;
+}
+
+.menu-item:nth-child(2) {
+margin-right: 20%;
+}
+
 
 .menu-item a {
   font-family: "PT sans bold";
@@ -75,10 +105,13 @@ li {
 }
 
 .main-pic-bg {
+  padding-top: 75px;
   width: 100%;
-  background: url(../img/bg_photo.jpg)
-  no-repeat 
-  center;
+  height: 509px;
+  background:   url(../img/main-bg-cut.png) no-repeat bottom,
+  url(../img/bg_photo.jpg) no-repeat  center;
+  margin-bottom: 60px;
+
 }
 .main-bg-small{
   width: 456px;
@@ -94,10 +127,12 @@ li {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   line-height: 26px;
+  margin-bottom: 25px;
 }
 
 .main-title + p { 
  line-height: 26px;
+ padding-bottom: 50px;
  }
 
 .view-city {
@@ -127,7 +162,7 @@ li {
 .block-item {
   width: 33.33%;
   text-align: center;
-    padding: 50px 61px;
+  padding: 50px 61px;
 }
 .p-bold {
   font-family: "PT sans bold";
@@ -138,13 +173,27 @@ li {
 .features {
   background: #eeeeee;
 }
-.registration {
-  padding-top: 54px;
-  padding-bottom: 0px;
-  padding-left: 312px;
-  padding-right: 312px;
-  text-align: center;
+
+.reigstration-center {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 570px;
+  flex-direction: column;
+  align-items: center;
 }
+
+.top-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-from {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
 .second-title {
   font-family: "PT sans bold", Arial, sans-serif;
   font-size: 30px;
@@ -162,66 +211,81 @@ li {
  }
 
  .brown {
-  padding: 34px 140px;
   background: #766357;
   width: 567px;
+  height: 86px;
  }
 
-.form-serch {
-   width: 567px;
-}
-
-.main-form {
-  background: #fff;
-  color: #000;
+.show-form {
+  padding: 55px;
+  background: white;
+  width: 567px;
+  height: 395px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 170px;
   font-family: "PT sans bold", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
 
- }
-.form-item {
-  text-align: left;
-  margin: 15px;
-}
-.form-item input { 
-  color: black;
-  font-family: "PT sans bold", Arial, sans-serif;
-  background: #f2f2f2;
-  border: none;  
-  text-transform: uppercase;
-  padding: 10px 15px;
-  }
-
-  .form-item input-placeholder {
-    color: #000;
-  }
-
-
-
-.small-btn-form {
-    color: #a9a9a9;
-  font-family: "PT sans bold", Arial, sans-serif;
-  background: #f2f2f2;
-  border: none;  
-  text-transform: uppercase;
-  padding: 10px 15px;
 }
 
-.blue-btn-form {
-  background: #81b3d2;
-  color: white;
-   font-family: "PT sans bold", Arial, sans-serif;
-  border: none;  
-  text-transform: uppercase;
-}
-
-
-
-.main-footer {
-  background: #fff;
+.top-form-item {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
   align-items: center;
 }
 
+.top-form-item input {
+  width: 345px;
+  height: 38px;
+  font-family: "PT sans bold", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
 
+  border: none;
+  background: #f2f2f2;
+}
+
+.bottom-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-form-item input {
+  width: 345px;
+  height: 38px;
+  font-family: "PT sans bold", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding-left: 15px;
+  padding-right: 10px;
+  border: none;
+  background: #f2f2f2;
+  width: 38px;
+    overflow: hidden;
+}
+
+.bottom-form-item .gray-btn {
+
+ margin: 0;
+ width: 38px;
+ border: none;
+ background: #f2f2f2;;
+ height: 38px;
+
+}
+
+
+.top-form-tiem {
+  margin-left: auto;
+}
+ 
 .center-footer li {
   display: inline-block;
   background: #81b3d2;
@@ -251,3 +315,4 @@ li {
   font-size: 14px;
   line-height: 21px;
  }
+
