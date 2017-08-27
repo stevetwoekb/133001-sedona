@@ -116,23 +116,52 @@
 				Укажите предполагаемые даты поездки,<br>
 				и мы покажем вам лучшие предложения гостиниц в седоне
 			</p>
+			<div class="brown-btn">
 			<button class="btn brown">Поиск гостиницы седоне</button>
+
 				<!--Форма !-->
 				<div class="show-form">
 					<form action="get" class="main-form">
-						<div class="top-form-item">
-							<label for="">Дата заезда:</label> <input type="text">
-						</div>
-						<div class="top-form-item">
-							<label for="">Дата отъезда:</label> <input type="text">
-						</div>
+							<div class="top-form-item">
+								
+								<label for="">Дата заезда:</label> 
+								<input type="text" placeholder="24 Апреля 2017">
+
+							</div>
+
+							<div class="top-form-item">
+
+								<label for="">Дата отъезда:</label> 
+								<input type="text" placeholder="4 июля 2017">
+
+							</div>
+
 						<div class="bottom-form">
-						<div class="bottom-form-item"><label for="">Взрослые:</label><button class="gray-btn">-</button> <input type="text" value="2"> <button class="gray-btn">+</button>
+							<div class="bottom-form-item">
+
+								<label for="">Взрослые:</label>
+								<div class="form-smal-block">
+								<button class="gray-btn minus"></button> 
+								<input type="text" value="2"> 
+								<button class="gray-btn plus"></button>
+								</div>
+							</div>
+
+							<div class="bottom-form-item">
+
+								<label for="">Дети:</label>
+								<div class="form-smal-block">
+								<button class="gray-btn minus"></button>
+								<input type="text" value="0"> 
+								<button class="gray-btn plus"></button>
+								</div>
+							</div>
 						</div>
-						<div class="bottom-form-item"><label for="">Дети:</label><button class="gray-btn">-</button> <input type="text" value="0"> <button class="gray-btn">+</button>
-						</div>
-						</div>	
+						<button class="blue-btn-form">
+							найти
+						</button>
 					</form>
+				</div>
 				</div>
 			</div>
 		</section>
@@ -141,23 +170,21 @@
 			<h2 class="visually-hidden">Карта седоны</h2>
 			<img src="img/map.jpg" alt="Город Седона находится в штате Аризона">
 			<!-- здесь будет интерактивная карта!-->
+			<footer class="main-footer">
+				<div class="left-footer"><b>#visitsedona</b></div>
+				<div class="center-footer">
+				 <ul class="center-footer-list">
+					<li><a href=""><img src="img/svg/twitter.svg" alt="Твиттер"></a></li>
+					<li><a href=""><img src="img/svg/fb-icon.svg" alt="Фейсбук"></a></li>
+					<li><a href=""><img src="img/svg/youtube.svg" alt="Ютюб"></a></li>
+				 </ul>
+				 </div>
+				<div class="right-footer">WEBSITE by<a href="#" class="logo-footer"><img src="img/svg/logo-htmlacademy.svg" alt=""></a></div>
+	        </footer>
 		</section>
 	</main>
-
-	<footer class="main-footer">
-			<b>#VISITSEDONA</b>
-
-			<ul class="center-footer">
-				<li><a href=""><img src="img/svg/twitter.svg" alt=""></a></li>
-				<li><a href=""><img src="img/svg/fb-icon.svg" alt=""></a></li>
-				<li><a href=""><img src="img/svg/youtube.svg" alt=""></a></li>
-			</ul>
-
-			<a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss">website by
-			<span class=""><img src="img/svg/logo-htmlacademy.svg" alt="Академия"></span>
-			</a>
-	</footer>
 	
+	</div>
 </div>
 </body>
 </html>
