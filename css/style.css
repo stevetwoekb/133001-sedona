@@ -543,10 +543,16 @@ color: #91b7d1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
- -webkit-box-pack: center;
-     -ms-flex-pack: center;
-         justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 240px;
+}
+
+.left-footer-item {
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PT sans bold", Arial, sans-serif;
 }
 
 .center-footer {
@@ -922,10 +928,6 @@ margin-left: 30px;
 
 }
 
-.discription-block span{
-  padding-left: 38px;
-}
-
 .discription-titile {
   color: black;
   font-family: "PT sans bold";
@@ -946,7 +948,23 @@ margin-left: 30px;
   color: #cacaca;
 }
 
+.serch-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-discript {
+  width: 112px;
+  margin-right: 5px;
+}
+
+.price-number {
+  margin-right: auto;
+}
+
+
 .serch-info {
+  width: 260px;
    display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -961,7 +979,7 @@ margin-left: 30px;
 
 .serch-info-item {
   color: white;
-  padding: 5px 15px;
+  padding: 3px 18px;
   background: #81b3d2;
 }
 
@@ -1073,4 +1091,21 @@ margin-left: 30px;
   background: #fff;
   position: relative;
   height: 120px;
+}
+
+.logo-footer {
+  margin-left: 10px;
+}
+
+.logo-footer svg {
+ width: 116px;
+}
+
+.logo-footer svg:hover,
+.logo-footer svg:focus {
+  fill: #81b3d2;
+}
+
+.logo-footer svg:active {
+  fill: #bdbbbc;
 }
