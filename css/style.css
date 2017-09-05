@@ -1109,3 +1109,40 @@ margin-left: 30px;
 .logo-footer svg:active {
   fill: #bdbbbc;
 }
+
+.hiddent-box {
+  display: none;
+}
+
+.catalog-form-list input {
+  display: none;
+}
+
+
+.catalog-form-list label { 
+padding-left: 40px;
+position: relative;
+ }
+
+
+.catalog-form-list label:before { 
+content: "";
+position: absolute;
+background: url(../img/svg/checkbox-off.svg);
+width: 23px;
+height: 23px;
+left: 0px;
+ }
+
+
+
+.catalog-form-list input[type="checkbox"]:checked + label:before { 
+content: "";
+position: absolute;
+background: url(../img/svg/checkbox-on.svg);
+width: 23px;
+height: 23px;
+left: 0px;
+ }
+
+
