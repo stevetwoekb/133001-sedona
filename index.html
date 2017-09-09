@@ -106,7 +106,7 @@
                         <form action="get" class="main-form">
                            <div class="top-form-item">
                               <label for="arrival">Дата заезда:</label> 
-                              <input type="text" placeholder="24 Апреля 2017" name="arrival" id="arrival">
+                              <input type="text" placeholder="24 Апреля 2017" name="arrival" id="arrival" required>
                               <a href="" class="calendar-icon">
                                  <svg 
                                     xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
@@ -117,7 +117,7 @@
                            </div>
                            <div class="top-form-item">
                               <label for="departure">Дата выезда:</label> 
-                              <input type="text" placeholder="4 июля 2017" name="departure" id="departure">
+                              <input type="text" placeholder="4 июля 2017" name="departure" id="departure" required>
                               <a href="" class="calendar-icon">
                                  <svg 
                                     xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
@@ -131,21 +131,21 @@
                                  <label for="adult">Взрослые:</label>
                                  <div class="form-smal-block">
                                     <button class="gray-btn minus"></button> 
-                                    <input type="text" value="2" name="adult" id="adult"> 
-                                    <button class="gray-btn plus"></button>
+                                    <input type="text" value="2" name="adult" id="adult" class="adult"> 
+                                    <button class="gray-btn plus" required></button>
                                  </div>
                               </div>
                               <div class="bottom-form-item">
                                  <label for="child" class="child">Дети:</label>
                                  <div class="form-smal-block small-right-form">
                                     <button class="gray-btn minus"></button>
-                                    <input type="text" value="0" name="child" id="child"> 
+                                    <input type="text" value="0" name="child" id="child" class="children" required> 
                                     <button class="gray-btn plus">
                                     </button>
                                  </div>
                               </div>
                            </div>
-                           <button class="blue-btn-form">
+                           <button class="blue-btn-form" type="submit">
                            найти
                            </button>
                         </form>
