@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <title>Каталог</title>
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/style-min.css">
    </head>
    <body>
       <div class="wrapper">
@@ -23,7 +23,7 @@
             <div class="bg-form">
                <form action="https://echo.htmlacademy.ru" class="catalog-main-form">
                   <div class="left-form-block">
-                     <fieldset>
+                     <fieldset class="main-catalog-form-ellement">
                         <legend>Инфроструктура</legend>
                         <ul class="catalog-form-list">
                            <li><input type="checkbox" id="dead-pool" name="dead-pool" checked><label for="dead-pool">Бассеин</label></li>
@@ -31,7 +31,7 @@
                               id="parking"><label for="parking">Парковка</label></li>
                            <li><input type="checkbox" id="wifi" name="wfif"><label for="wifi">Wi-fi</label></li>
                         </ul>
-                     </fieldset>
+                     </fieldset class="main-catalog-form-ellement">
                      <fieldset>
                         <legend>Тип жилья</legend>
                         <ul class="catalog-form-list">
@@ -48,10 +48,10 @@
                      </fieldset>
                   </div>
                   <div class="right-form-block">
-                     <p>Стоимость в сутки (Р):</p>
+                     <p class="right-form-block-title">Стоимость в сутки (Р):</p>
                      <ul class="form-number">
-                        <li>От 0</li>
-                        <li>До 3000</li>
+                        <li><input type="text" value="От 0"></li>
+                        <li><input type="text" value="До 3000"></li>
                      </ul>
                      <div class="line">
                         <span class="radio-btn">
@@ -70,14 +70,14 @@
                         </span>
                      </div>
                      <div class="right-form-block-bottom">
-                        <button class="white-btn">показать</button>
+                        <button class="white-btn" type="submit">показать</button>
                      </div>
                   </div>
                </form>
             </div>
             <section class="top-serch-result">
               <h2 class="visually-hidden">Результат поиска отелей</h2>
-               <div class="left-serch-setting">
+               <div class="left-search-setting">
                   <b>Найдено: <span>3</span></b>
                   <ul class="serch-global-sorting">
                      <li><b>Сортировка:</b></li>
@@ -106,10 +106,10 @@
             <ul class="main-serch-result">
                <li class="result-item">
                   <div class="view-block"><img src="img/list-1.jpg" alt="Amara Resort & Spa" width="135" height="90"></div>
-                  <div class="discription-block">
-                     <a class="discription-titile" href="#">Amara Resort & Spa</a>
+                  <div class="description-block">
+                     <a class="description-titile" href="#">Amara Resort & Spa</a>
                      <div class="serch-price">
-                        <p class="price-discript">Гостиница</p>
+                        <p class="price-description">Гостиница</p>
                         <span class="price-number">От  4000 р.</span>
                      </div>
                      <div class="serch-info">
@@ -125,16 +125,16 @@
                         <li></li>
                      </ul>
                      <div class="rating-number">
-                        <p>Рейтинг: <span>8,5</span></p>
+                        <p class="rating-contain">Рейтинг: <span>8,5</span></p>
                      </div>
                   </div>
                </li>
                <li class="result-item">
                   <div class="view-block"><img src="img/list-2.jpg" alt="Desert Quail Inn"  width="135" height="90"></div>
-                  <div class="discription-block">
-                     <a class="discription-titile" href="#">Desert Quail Inn</a>
+                  <div class="description-block">
+                     <a class="description-titile" href="#">Desert Quail Inn</a>
                      <div class="serch-price">
-                        <p class="price-discript">Мотель</p>
+                        <p class="price-description">Мотель</p>
                         <span class="price-number">От  3000 р.</span>
                      </div>
                      <div class="serch-info">
@@ -155,10 +155,10 @@
                </li>
                <li class="result-item">
                   <div class="view-block"><img src="img/list-3.jpg" alt="Villas at Poco Diablo" width="135" height="90"></div>
-                  <div class="discription-block">
-                     <a class="discription-titile" href="#">Villas at Poco Diablo</a>
+                  <div class="description-block">
+                     <a class="description-titile" href="#">Villas at Poco Diablo</a>
                      <div class="serch-price">
-                        <p class="price-discript">АППАРТАМЕНТЫ</p>
+                        <p class="price-description">АПАРТАМЕНТЫ</p>
                         <span class="price-number">От  2000 р.</span>
                      </div>
                      <div class="serch-info">
@@ -168,7 +168,6 @@
                   </div>
                   <div class="rating">
                      <ul class="star">
-                        <li></li>
                         <li></li>
                         <li></li>
                      </ul>
