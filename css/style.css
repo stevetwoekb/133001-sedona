@@ -35,18 +35,6 @@ body {
   width: 100%;
 }
 
-h1, p {
-  margin: 0;
-  padding: 0; }
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
 .container {
   margin: 0 auto;
 }
@@ -79,6 +67,7 @@ li {
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: 56px;
+  list-style: none;
 }
 
 .menu-item {
@@ -92,9 +81,14 @@ li {
 
 
 .menu-item a {
+  text-decoration: none;
   font-family: "PT sans bold", Arial, Sans-serif;
   line-height: 26px;
   color: #000;
+}
+
+a.menu-active {
+color: #766357;
 }
 
 .menu-item a:hover,
@@ -113,6 +107,7 @@ li {
   height: 509px;
   background:   url(../img/main-bg-cut.png) no-repeat bottom,
   url(../img/bg_photo.jpg) no-repeat  center;
+  background-color: #81b3d2;
   background-size: contain, cover;
   margin-bottom: 60px;
 
@@ -153,7 +148,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 256px;
+  background: #81b3d2;
 }
 
 .view-small-block {
@@ -162,7 +157,6 @@ li {
   padding-left: 45px;
   padding-right: 45px;
   width: 400px;
-  max-height: 256px;
   background: #81b3d2;
   text-align: center;
   vertical-align: middle;
@@ -220,9 +214,10 @@ li {
 
 .view-big-block {
   width: 800px;
+  height: 256px;
 }
 
-.тhree-blocks {
+.three-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,6 +230,7 @@ li {
   padding-bottom: 77px;
   padding-left: 50px;
   padding-right: 50px;
+  list-style: none;
 }
 
 .block-gray {
@@ -246,6 +242,10 @@ li {
   font-family: "PT sans bold", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
+}
+
+.three-blocks {
+  display: flex;
 }
 
 .features {
@@ -288,7 +288,7 @@ li {
   flex-direction: row;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .second-title {
@@ -331,7 +331,10 @@ li {
   height: 86px;
  }
 
+
+
 .show-form {
+  display: block;
   position: relative;
   z-index: 3;
   padding: 55px;
@@ -341,11 +344,37 @@ li {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
-  top: 87px;
+  top: 85px;
   font-family: "PT sans bold", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
-  box-shadow:  0 7px 15px 0 rgba(0, 0, 0, 0.15)
+  box-shadow:  0 7px 15px 0 rgba(0, 0, 0, 0.15);
+  animation: modal 0.6s;
+}
+
+
+
+.show-form-none {
+  display: none;
+}
+
+
+@keyframes modal {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .top-form-item {
@@ -421,9 +450,13 @@ li {
 .bottom-form-item {
   width: 200px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
+.child {
+  padding-left: 10px;
+}
 .bottom-form-item label { 
   display: block; 
 }
@@ -565,6 +598,7 @@ li {
   -ms-flex-align: center;
   align-items: center;
   height: 48px;
+  list-style: none;
 }
 
 
@@ -628,7 +662,8 @@ li {
 .bg-form {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background: url(../img/hotels_header.jpg) no-repeat center;
+  background: url(../img/hotels_header.jpg) no-repeat center ;
+  background-color: #435762;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,6 +693,7 @@ li {
 .left-form-block fieldset {
   border: none;
   margin-right: 120px;
+  padding: 0px;
 }
 
 .left-form-block fieldset:last-child {
@@ -832,6 +868,7 @@ li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  list-style: none;
 }
 
 .serch-global-sorting li:first-child {
@@ -870,6 +907,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  list-style: none;
 }
 
 .serch-second-sorting li:first-child {
@@ -923,6 +961,7 @@ li {
 }
 
 .discription-titile {
+  text-decoration: none;
   color: black;
   font-family: "PT sans bold", Arial, sans-serif;
   font-size: 21px;
@@ -972,6 +1011,7 @@ li {
   color: white;
   padding: 3px 18px;
   background: #81b3d2;
+  text-decoration: none;
 }
 
 .serch-info-item:hover,
@@ -1024,6 +1064,7 @@ li {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  list-style: none;
 }
 
 .star li {
@@ -1132,4 +1173,15 @@ li {
   width: 23px;
   height: 23px;
   left: 0px;
+ }
+
+
+.catalog-form-list input[type="checkbox"]:disabled + label:before { 
+  content: "";
+  position: absolute;
+  background: url(../img/svg/checkbox-on.svg);
+  width: 23px;
+  height: 23px;
+  left: 0px;
+  opacity: 0.5;
  }
