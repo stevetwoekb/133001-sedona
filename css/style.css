@@ -69,22 +69,23 @@ body {
 }
 .menu-item {
     width: 20%;
-    text-align: center;
 }
-.menu-item:first-child a {
+.menu-item:first-child  {
     text-align: left;
+    padding-left: 6%;
 }
 .menu-item:nth-child(2) {
     margin-right: 20%;
+    padding-left: 6%;
 }
-.menu-item:nth-child(2) a {
-    text-align: left;
-}
-.menu-item:nth-child(3) a {
+
+.menu-item:nth-child(3)  {
     text-align: right;
+    padding-right: 6%;
 }
-.menu-item:last-child a {
+.menu-item:last-child  {
     text-align: right;
+    padding-right: 6%;
 }
 .menu-item a {
     text-decoration: none;
