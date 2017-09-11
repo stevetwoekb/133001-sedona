@@ -479,7 +479,7 @@ a.menu-active {
 .bottom-form-item input {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 345px;
+    max-width: 38px;
     height: 38px;
     font-family: "PT sans bold", Arial, sans-serif;
     font-size: 14px;
@@ -488,7 +488,6 @@ a.menu-active {
     text-align: center;
     border: none;
     background: #f2f2f2;
-    width: 38px;
 }
 .form-small-block {
     margin-left: 40px;
